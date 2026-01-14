@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="jacaranda.com.PrimerSecriptPrueba" class="method navigator-link" hash-for-method="isPresentFuhter">isPresentFuhter</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="jacaranda.com.PracticaSelenium" class="method navigator-link" hash-for-method="chehckLoginWithCredentials">chehckLoginWithCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -117,7 +117,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="jacaranda.com.PrimerSecriptPrueba" class="method navigator-link" hash-for-method="verificarTituloPaginaTest">verificarTituloPaginaTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="jacaranda.com.PracticaSelenium" class="method navigator-link" hash-for-method="chehckLoginWithCredentialsErroneas">chehckLoginWithCredentialsErroneas</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="jacaranda.com.PracticaSelenium" class="method navigator-link" hash-for-method="waitHello">waitHello</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -135,40 +140,19 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">jacaranda.com.PrimerSecriptPrueba</span>
+              <span class="class-name">jacaranda.com.PracticaSelenium</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="isPresentFuhter">
-                  </a> <!-- isPresentFuhter -->
-                  <span class="method-name">isPresentFuhter</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;Further Reading&apos;]&quot;}
-  (Session info: chrome=126.0.6478.55)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-37-generic&apos;, java.version: &apos;17.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b7ccf62105d7ae6fd9306d4bee1f05e, findElement {using=name, value=Further Reading}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.55, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33441}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33441/devtoo..., se:cdpVersion: 126.0.6478.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b7ccf62105d7ae6fd9306d4bee1f05e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at jacaranda.com.PrimerSecriptPrueba.isPresentFuhter(PrimerSecriptPrueba.java:29)
+                  <a name="chehckLoginWithCredentials">
+                  </a> <!-- chehckLoginWithCredentials -->
+                  <span class="method-name">chehckLoginWithCredentials</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error, la url no es la esperada expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at jacaranda.com.PracticaSelenium.chehckLoginWithCredentials(PracticaSelenium.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -206,14 +190,21 @@ Session ID: 3b7ccf62105d7ae6fd9306d4bee1f05e
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">jacaranda.com.PrimerSecriptPrueba</span>
+              <span class="class-name">jacaranda.com.PracticaSelenium</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verificarTituloPaginaTest">
-                  </a> <!-- verificarTituloPaginaTest -->
-                  <span class="method-name">verificarTituloPaginaTest</span>
+                  <a name="chehckLoginWithCredentialsErroneas">
+                  </a> <!-- chehckLoginWithCredentialsErroneas -->
+                  <span class="method-name">chehckLoginWithCredentialsErroneas</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="waitHello">
+                  </a> <!-- waitHello -->
+                  <span class="method-name">waitHello</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,7 +212,7 @@ Session ID: 3b7ccf62105d7ae6fd9306d4bee1f05e
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--11687846/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--533079741/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -230,7 +221,7 @@ Session ID: 3b7ccf62105d7ae6fd9306d4bee1f05e
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;jacaranda.com.PrimerSecriptPrueba&quot;/&gt;
+      &lt;class name=&quot;jacaranda.com.PracticaSelenium&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -270,20 +261,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verificarTituloPaginaTest')
-data.setCell(0, 2, 'jacaranda.com.PrimerSecriptPrueba')
-data.setCell(0, 3, 7016);
+data.setCell(0, 1, 'waitHello')
+data.setCell(0, 2, 'jacaranda.com.PracticaSelenium')
+data.setCell(0, 3, 2464);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'isPresentFuhter')
-data.setCell(1, 2, 'jacaranda.com.PrimerSecriptPrueba')
-data.setCell(1, 3, 2072);
+data.setCell(1, 1, 'chehckLoginWithCredentials')
+data.setCell(1, 2, 'jacaranda.com.PracticaSelenium')
+data.setCell(1, 3, 2281);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'chehckLoginWithCredentialsErroneas')
+data.setCell(2, 2, 'jacaranda.com.PracticaSelenium')
+data.setCell(2, 3, 894);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -309,24 +304,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">jacaranda.com.PrimerSecriptPrueba</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">jacaranda.com.PracticaSelenium</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup</span>
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">isPresentFuhter</span>
-                <span class="method-start">2294 ms</span>
+                <span class="method-name">chehckLoginWithCredentials</span>
+                <span class="method-start">4348 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verificarTituloPaginaTest</span>
-                <span class="method-start">4377 ms</span>
+                <span class="method-name">chehckLoginWithCredentialsErroneas</span>
+                <span class="method-start">6640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">waitHello</span>
+                <span class="method-start">7536 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">11398 ms</span>
+                <span class="method-start">10001 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

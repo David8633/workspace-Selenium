@@ -1,56 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-17T10:01:14 CET" name="Default suite" finished-at="2025-12-17T10:01:26 CET" duration-ms="11522">
+  <suite started-at="2026-01-14T09:27:37 CET" name="Default suite" finished-at="2026-01-14T09:27:47 CET" duration-ms="10238">
     <groups>
     </groups>
-    <test started-at="2025-12-17T10:01:14 CET" name="Default test" finished-at="2025-12-17T10:01:26 CET" duration-ms="11522">
-      <class name="jacaranda.com.PrimerSecriptPrueba">
-        <test-method is-config="true" signature="setup()[pri:0, instance:jacaranda.com.PrimerSecriptPrueba@61a5b4ae]" started-at="2025-12-17T10:01:14 CET" name="setup" finished-at="2025-12-17T10:01:16 CET" duration-ms="2258" status="PASS">
+    <test started-at="2026-01-14T09:27:37 CET" name="Default test" finished-at="2026-01-14T09:27:47 CET" duration-ms="10238">
+      <class name="jacaranda.com.PracticaSelenium">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:jacaranda.com.PracticaSelenium@13e344d]" started-at="2026-01-14T09:27:37 CET" name="setUp" finished-at="2026-01-14T09:27:41 CET" duration-ms="4287" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="isPresentFuhter()[pri:0, instance:jacaranda.com.PrimerSecriptPrueba@61a5b4ae]" started-at="2025-12-17T10:01:16 CET" name="isPresentFuhter" finished-at="2025-12-17T10:01:18 CET" duration-ms="2072" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- setUp -->
+        <test-method signature="chehckLoginWithCredentials()[pri:0, instance:jacaranda.com.PracticaSelenium@13e344d]" started-at="2026-01-14T09:27:41 CET" name="chehckLoginWithCredentials" finished-at="2026-01-14T09:27:43 CET" duration-ms="2281" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='Further Reading']"}
-  (Session info: chrome=126.0.6478.55)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b7ccf62105d7ae6fd9306d4bee1f05e, findElement {using=name, value=Further Reading}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.55, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33441}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33441/devtoo..., se:cdpVersion: 126.0.6478.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b7ccf62105d7ae6fd9306d4bee1f05e]]>
+              <![CDATA[Error, la url no es la esperada expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='Further Reading']"}
-  (Session info: chrome=126.0.6478.55)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b7ccf62105d7ae6fd9306d4bee1f05e, findElement {using=name, value=Further Reading}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.55, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33441}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33441/devtoo..., se:cdpVersion: 126.0.6478.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b7ccf62105d7ae6fd9306d4bee1f05e
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at jacaranda.com.PrimerSecriptPrueba.isPresentFuhter(PrimerSecriptPrueba.java:29)
+              <![CDATA[java.lang.AssertionError: Error, la url no es la esperada expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at jacaranda.com.PracticaSelenium.chehckLoginWithCredentials(PracticaSelenium.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,19 +52,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- isPresentFuhter -->
-        <test-method signature="verificarTituloPaginaTest()[pri:0, instance:jacaranda.com.PrimerSecriptPrueba@61a5b4ae]" started-at="2025-12-17T10:01:18 CET" name="verificarTituloPaginaTest" finished-at="2025-12-17T10:01:25 CET" duration-ms="7016" status="PASS">
+        </test-method> <!-- chehckLoginWithCredentials -->
+        <test-method signature="chehckLoginWithCredentialsErroneas()[pri:0, instance:jacaranda.com.PracticaSelenium@13e344d]" started-at="2026-01-14T09:27:44 CET" name="chehckLoginWithCredentialsErroneas" finished-at="2026-01-14T09:27:44 CET" duration-ms="894" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificarTituloPaginaTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:jacaranda.com.PrimerSecriptPrueba@61a5b4ae]" started-at="2025-12-17T10:01:25 CET" name="teardown" finished-at="2025-12-17T10:01:26 CET" duration-ms="86" status="PASS">
+        </test-method> <!-- chehckLoginWithCredentialsErroneas -->
+        <test-method signature="waitHello()[pri:0, instance:jacaranda.com.PracticaSelenium@13e344d]" started-at="2026-01-14T09:27:44 CET" name="waitHello" finished-at="2026-01-14T09:27:47 CET" duration-ms="2464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitHello -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:jacaranda.com.PracticaSelenium@13e344d]" started-at="2026-01-14T09:27:47 CET" name="teardown" finished-at="2026-01-14T09:27:47 CET" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- jacaranda.com.PrimerSecriptPrueba -->
+      </class> <!-- jacaranda.com.PracticaSelenium -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

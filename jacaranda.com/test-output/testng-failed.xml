@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="jacaranda.com.PrimerSecriptPrueba">
+      <class name="jacaranda.com.PracticaSelenium">
         <methods>
-          <include name="isPresentFuhter"/>
-          <include name="setup"/>
+          <include name="chehckLoginWithCredentials"/>
           <include name="teardown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- jacaranda.com.PrimerSecriptPrueba -->
+      </class> <!-- jacaranda.com.PracticaSelenium -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
